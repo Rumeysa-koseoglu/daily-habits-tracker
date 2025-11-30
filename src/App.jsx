@@ -6,14 +6,14 @@ import Layout from "./components/Layout";
 
 function App() {
   return (
-    <>
+    <div className=" font-quicksand">
       <Layout>
         <Routes>
           <Route path="/home" element={<HomePage />} />
           <Route path="/add-habit" element={<AddHabitPage />} />
         </Routes>
       </Layout>
-    </>
+    </div>
   );
 }
 
