@@ -1,7 +1,12 @@
 import React from "react";
+import HabitItem from "../components/HabitItem";
 
 function AddHabitPage() {
-  return <div>wellcome to add habbit page!</div>;
+  return (
+    <div>
+      <HabitItem />
+    </div>
+  );
 }
 
 export default AddHabitPage;
