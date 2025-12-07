@@ -5,7 +5,7 @@ function Layout({ children }) {
   return (
     <>
       <Navbar />
-      <div className="max-w-full h-screen p-4 m-0 bg-[#565050]">
+      <div className="max-w-full min-h-[calc(100vh-81px)] p-4 m-0 bg-[#565050]">
         <main>{children}</main>
       </div>
     </>

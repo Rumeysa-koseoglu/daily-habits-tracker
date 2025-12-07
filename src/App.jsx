@@ -6,7 +6,7 @@ import Layout from "./components/Layout";
 
 function App() {
   return (
-    <div className=" font-quicksand">
+    <div className="font-quicksand overflow-hidden">
       <Layout>
         <Routes>
           <Route path="/home" element={<HomePage />} />
