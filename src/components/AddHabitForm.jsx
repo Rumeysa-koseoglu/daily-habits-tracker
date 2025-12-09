@@ -21,6 +21,10 @@ function AddHabitForm() {
               <option>EXERCISE</option>
             </select>
           </div>
+
+          <div className="flex flex-col items-center gap-4">
+            <label>HABIT CONTENT: </label>
+          </div>
         </div>
       </form>
     </div>
