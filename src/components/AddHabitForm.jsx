@@ -30,6 +30,10 @@ function AddHabitForm() {
               className="border border-black rounded-full p-4 text-lg outline-none w-[380px]"
             />
           </div>
+
+          <button className="bg-green-600 hover:bg-green-700 hover:ring-2 ring-green-500 text-white p-3 rounded-full w-[390px]">
+            save
+          </button>
         </div>
       </form>
     </div>
