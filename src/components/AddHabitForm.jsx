@@ -12,6 +12,15 @@ function AddHabitForm() {
       >
         <div className="flex flex-col items-center gap-4">
           <label className=""> HABIT TITLE: </label>
+          <div className="flex justify-center w-[380px] border border-black  rounded-full p-4">
+            <select>
+              <option value="selected">SELECT A TITLE</option>
+              <option>CHORES</option>
+              <option>STUDY</option>
+              <option>PERSONAL DEV.</option>
+              <option>EXERCISE</option>
+            </select>
+          </div>
         </div>
       </form>
     </div>
