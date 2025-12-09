@@ -24,6 +24,11 @@ function AddHabitForm() {
 
           <div className="flex flex-col items-center gap-4">
             <label>HABIT CONTENT: </label>
+            <input
+              type="text"
+              placeholder="please enter a habit"
+              className="border border-black rounded-full p-4 text-lg outline-none w-[380px]"
+            />
           </div>
         </div>
       </form>
