@@ -3,9 +3,13 @@ import { GiSunglasses } from "react-icons/gi";
 import { BsSunglasses } from "react-icons/bs";
 import { LuFilePlus2 } from "react-icons/lu";
 import { useState } from "react";
-function Navbar() {
+function Navbar({ onHandleToggleForm }) {
   const [isAddHabitPage, setIsAddHabitPage] = useState(false);
   console.log(isAddHabitPage);
+
+  const ToggleForm = () => {
+    onHandleToggleForm();
+  };
 
   return (
     <nav className="grid grid-cols-9 p-6 items-center bg-[#232020] text-[22px] text-[#319530]">
@@ -19,7 +23,11 @@ function Navbar() {
           </Link>
 
           <div className="flex items-center justify-around col-start-9">
-            <LuFilePlus2 className="w-8 h-8" />
+            <LuFilePlus2
+              id="addHabitButton"
+              className="w-8 h-8"
+              onClick={ToggleForm}
+            />
             <BsSunglasses className="text-[#0d0709] text-3xl" />
             {/* <GiSunglasses className="text-[34px] text-[#FCF5EE]" /> */}
           </div>
