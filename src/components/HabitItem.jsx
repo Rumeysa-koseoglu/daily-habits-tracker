@@ -2,7 +2,7 @@ import { PiTrashDuotone } from "react-icons/pi";
 
 function HabitItem() {
   return (
-    <div className="flex flex-col items-center gap-10 p-6 bg-[#232020] max-w-[450px] h-auto max-h-[500px] rounded-xl text-[#FF7315] text-[18px]">
+    <div className="flex flex-col items-center gap-10 p-6 bg-[#232020] max-w-[480px] h-[200px] max-h-[250px] rounded-xl text-[#FF7315] text-[18px]">
       {/* CHECK, HABIT TITLE, AND DELETE ICON */}
       <div className="w-full flex flex-row items-center justify-between">
         <input
@@ -23,14 +23,6 @@ function HabitItem() {
 
       <p className="text-center underline">read book at least 20 pages</p>
     </div>
-
-    //  <div className="w-full grid grid-cols-10 items-center justify-cen">
-    //
-    //       </div>
-
-    //
-
-    //
   );
 }
 
