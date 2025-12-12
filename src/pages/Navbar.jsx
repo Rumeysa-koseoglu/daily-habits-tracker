@@ -12,7 +12,7 @@ function Navbar({ onHandleToggleForm }) {
   };
 
   return (
-    <nav className="grid grid-cols-9 p-6 items-center bg-[#232020] text-[22px] text-[#319530]">
+    <nav className="grid grid-cols-9 p-6 w-full items-center bg-[#232020] text-[22px] text-[#319530] fixed">
       {isAddHabitPage ? (
         <>
           <Link to="/home" onClick={() => setIsAddHabitPage(false)}>
