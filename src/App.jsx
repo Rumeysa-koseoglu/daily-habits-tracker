@@ -7,6 +7,7 @@ import { useState } from "react";
 
 function App() {
   const [isFormVisible, setIsFormVisible] = useState(false);
+  console.log(isFormVisible);
 
   const HandleToggleForm = () => {
     setIsFormVisible(!isFormVisible);
@@ -14,15 +15,15 @@ function App() {
 
   return (
     <div className="font-quicksand overflow-hidden">
-      <Layout onHandleToggleForm={HandleToggleForm} isForm={isFormVisible}>
+      <Layout onHandleToggleForm={HandleToggleForm}>
         <Routes>
           <Route path="/home" element={<HomePage />} />
           <Route
             path="/add-habit"
             element={
               <AddHabitPage
-                setIsForm={setIsFormVisible}
-                isForm={isFormVisible}
+                setIsFormVisible={setIsFormVisible}
+                isFormVisible={isFormVisible}
               />
             }
           />

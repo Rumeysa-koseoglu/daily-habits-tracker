@@ -5,7 +5,6 @@ import { LuFilePlus2 } from "react-icons/lu";
 import { useState } from "react";
 function Navbar({ onHandleToggleForm }) {
   const [isAddHabitPage, setIsAddHabitPage] = useState(false);
-  console.log(isAddHabitPage);
 
   const ToggleForm = () => {
     onHandleToggleForm();
