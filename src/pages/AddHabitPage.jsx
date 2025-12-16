@@ -9,7 +9,7 @@ function AddHabitPage({ isFormVisible, setIsFormVisible }) {
         <HabitItem />
       </div>
       {isFormVisible && (
-        <div className="flex min-h-screen w-screen justify-center items-center border-2 border-b-orange-700">
+        <div className="flex min-h-screen w-screen justify-center items-center">
           <AddHabitForm setIsFormVisible={setIsFormVisible} />
         </div>
       )}
